@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="ass9.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Dog Designer</title>
+</head>
+
+<body>
+    <main>
+
+        <h1>Dog Designer</h1>
+        <section>
+
+            <label>Name : </label>
+            <input type="text" id="names">
+
+            <label>Color : </label>
+            <input type="color" id="colors">
+
+            <label>Size : </label>
+            <select id="sizes">
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+            </select>
+
+            <label>Direction : </label>
+            <select id="directions">
+                <option value="up">up</option>
+                <option value="down">down</option>
+                <option value="left">left</option>
+                <option value="right">right</option>
+            </select>
+
+        </section>
+
+        <input type="button" value="Add" onclick="add()">
+
+
+
+        <div>
+            <ol id="dogList"></ol>
+        </div>
+    </main>
+    <section id='svgdog'>
+        <svg id="picOfDog" version="1.0" xmlns="http://www.w3.org/2000/svg" width="500px" height="500px"
+            style="border: 1px solid black;" viewBox="0 0 1280.000000 772.000000" preserveAspectRatio="xMidYMid meet">
+            <metadata>
+                Created by potrace 1.15, written by Peter Selinger 2001-2017
+            </metadata>
+
+            <polygon id="wh"
+                points=" 10405,7647 10117,7502 10008,7430 9937,7430 9865,7430 9795,7360 9724,7290 9575,7349 8980,7504 8864,7504 8783,7442 8532,7098 8509,7002 8614,6791 8720,6580 8720,6470 8720,6360 8899,6217 9078,6073 8962,5957 8773,5817 8700,5793 8234,5828 7768,5864 7497,5846 7040,5810 6685,5786 5535,5695 4475,5564 3837,5374 3565,5060 3335,4731 3283,4588 2994,3850 2732,3183 2518,2961 2321,2780 2147,2746 1973,2713 1779,2732 818,2972 316,3464 109,3640 31,3680 25,3632 10,3524 51,3276 165,3110 535,2618 592,2579 1700,2171 2075,2120 2636,2060 2716,2039 2763,1882 3115,616 3164,499 3443,426 3744,326 3800,290 3854,265 3896,241 3945,264 4185,284 4408,287 4440,292 4440,399 4440,506 4324,598 4117,738 3946,790 3868,795 3834,915 3764,1122 3729,1209 3732,1356 3735,1503 4005,1595 4323,1708 4415,1716 4360,1531 4292,1360 4581,927 4869,495 5083,319 5437,71 5579,0 5682,20 5830,51 6265,69 6655,75 6691,217 6728,360 6576,451 6393,572 6283,597 6140,585 6075,580 5795,895 5518,1223 5559,1315 5700,1625 5930,2067 6322,2064 6919,1965 7317,1930 7938,2036 8507,2136 8751,1173 9001,179 9119,71 9227,-1 9336,35 9586,70 9732,78 9867,113 10118,91 10158,70 10262,106 10439,213 10586,395 10660,505 10553,612 10445,719 10236,754 10024,793 10041,861 10575,2598 10692,2915 11012,3504 11070,3646 11195,3893 11300,4068 11300,4201 11335,4620 11372,4935 11375,4965 11510,4982 11651,4999 11885,5321 12067,5715 12251,6080 12333,6151 12488,6279 12590,6361 12590,6469 12590,6577 12696,6790 12801,7004 12775,7110 12739,7252 12587,7395 12445,7501 12305,7497 11903,7401 11588,7310 11505,7370 11446,7430 11375,7430 11305,7430 11195,7502 10868,7647 10618,7720 10405,7647" />
+            <g id="dogsvg"></g>
+        </svg>
+    </section>
+</body>
+
+</html>
+
